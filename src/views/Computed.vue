@@ -1,10 +1,22 @@
 <template>
-$END$
+  <h1> Full Name : {{ fullName }}</h1>
 </template>
 
 <script>
 export default {
-name: "Computed"
+  // eslint-disable-next-line vue/multi-word-component-names
+  name: "Computed",
+  data() {
+    return {
+      firstName: 'Sungsin',
+      lastName: 'Jo'
+    }
+  },
+  computed: {
+    fullName(){
+      return this.firstName + ' ' + this.lastName;
+    }
+  }
 }
 </script>
 

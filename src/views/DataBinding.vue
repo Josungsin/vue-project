@@ -1,10 +1,15 @@
 <template>
-$END$
+  <h1> Hello, {{ title }}</h1>
 </template>
 
 <script>
 export default {
-name: "DataBinding"
+  name: "DataBinding",
+  data(){
+    return {
+      title: 'World'
+    }
+  }
 }
 </script>
 

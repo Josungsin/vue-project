@@ -1,10 +1,17 @@
 <template>
-$END$
+  <div>
+    <input type="text" v-model="valueModel"/>
+  </div>
 </template>
 
 <script>
 export default {
-name: "DataBindingInputText"
+  name: "DataBindingInputText",
+  data() {
+    return {
+      valueModel: 'South Korea'
+    };
+  }
 }
 </script>
 

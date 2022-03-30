@@ -1,10 +1,20 @@
 <template>
-$END$
+  <div :style="styleObject">
+    인라인 스타일 바인딩
+  </div>
 </template>
 
 <script>
 export default {
-name: "DataBindingStyle"
+  name: "DataBindingStyle",
+  data(){
+    return{
+      styleObject:{
+        color: 'red',
+        fondSize:'13px'
+      }
+    }
+  }
 }
 </script>
 

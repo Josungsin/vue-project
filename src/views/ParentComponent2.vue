@@ -1,10 +1,15 @@
 <template>
-$END$
+  <child-component2 @send-message="sendMessage" ref="child_component"></child-component2>
 </template>
 
 <script>
+import ChildComponent2 from "@/views/ChildComponent2";
 export default {
-name: "ParentComponent2"
+  name: "ParentComponent2",
+  components: {ChildComponent2},
+  mounted() {
+    this.$refs.child_component.callFromParent();
+  }
 }
 </script>
 

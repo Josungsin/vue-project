@@ -1,10 +1,17 @@
 <template>
-$END$
+  <div>
+    <img v-bind:src="imgSrc"/>
+  </div>
 </template>
 
 <script>
 export default {
-name: "DataBindingAttribue"
+  name: "DataBindingAttribue",
+  data(){
+    return{
+      imgSrc: "https://kr.vuejs.org/images/logo.png"
+    }
+  }
 }
 </script>
 
